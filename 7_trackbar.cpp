@@ -15,6 +15,7 @@ int main()
 	// 要用threshold需要先转换成灰度图
 	cv::Mat gray; // 用于存储转换后的图片
 	cv::cvtColor(img, gray, cv::COLOR_BGR2GRAY); // 转换为灰度图
+	cv::namedWindow("show", cv::WINDOW_KEEPRATIO);
 	cv::imshow("show", gray); // 显示灰度图
 
 	cv::createTrackbar("threshold", "show", nullptr, 255, [](int pos, void *gray_ptr) { // 定义回调函数

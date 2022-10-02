@@ -3,7 +3,7 @@
 
 int main()
 {
-	cv::Mat img = cv::imread("../imgs/img1.jpg"); // 从文件读取图片到内存
+	cv::Mat img = cv::imread("../imgs/dont_forget.jpg"); // 从文件读取图片到内存
 	if(img.empty()) // 判断图片是否读取成功
 	{
 		std::cerr << "读取图片失败！" << std::endl;
